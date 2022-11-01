@@ -16,5 +16,8 @@ function createBoard(size) {
 createBoard(16);
 
 function changeSize(input){
-    createBoard(input);
+    if( input < 1 || input > 100){
+        alert("Please input a number less than 100, and more than 1")
+    } else{
+    createBoard(input)};
 };
